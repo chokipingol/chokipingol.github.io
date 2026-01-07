@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeremie S. Salonga</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="giyuJ.png" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts TT Moons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=TT+Moons:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Jeremie S. Salonga</h1>
+    <p>Welcome to my personal website!</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#profile" class="nav-link active">Profile</a>
+    <a href="#badges" class="nav-link">Badges</a>
+    <a href="#education" class="nav-link">Education</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile" class="active">
+      <div class="profile-info">
+        <img src="giyuJ.png" alt="Profile Picture" id="profilePic" />
+        <p class="upload-hint">Click on the picture to change it</p>
+        <div class="profile-text justify-text">
+          <h2>About Me</h2>
+          <p>Hello! I am Jeremie, passionate about web development and learning new technologies. This is my personal site showcasing my work and achievements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BADGES SECTION -->
+    <section id="badges">
+      <h2>My Badges</h2>
+      <div class="badges-section">
+        <div class="badges-group">
+          <h3>Programming</h3>
+          <ul class="badges-list">
+            <li class="badge"><i class="fa-solid fa-code"></i> HTML</li>
+            <li class="badge"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+            <li class="badge"><i class="fa-brands fa-js"></i> JavaScript</li>
+          </ul>
+        </div>
+        <div class="badges-group">
+          <h3>Tools</h3>
+          <ul class="badges-list">
+            <li class="badge"><i class="fa-brands fa-github"></i> GitHub</li>
+            <li class="badge"><i class="fa-solid fa-database"></i> SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-section">
+        <div class="education-item">
+          <h3>University Name</h3>
+          <p>Bachelor’s in Computer Science</p>
+          <p>2018 - 2022</p>
+        </div>
+        <div class="education-item">
+          <h3>High School Name</h3>
+          <p>High School Diploma</p>
+          <p>2014 - 2018</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- OPTIONAL FOOTER -->
+  <footer style="text-align:center; padding:20px; color:#fff; background:#042c47ff;">
+    &copy; 2026 Jeremie S. Salonga
+  </footer>
+
+  <!-- Optional JS for section switching -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+
+        sections.forEach(sec => sec.classList.remove('active'));
+        target.classList.add('active');
+
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
