@@ -1,12 +1,6 @@
 /* ====== GENERAL STYLES ====== */
 body {
-  font-family: 'TT Moons', sans-serif;
-  background: linear-gradient(135deg, #b2cbd6ff 0%, #0f3853ff 100%);
-  color: #333;
-  margin: 0;
-  padding: 0;
-  transition: background 0.5s ease;
-  overflow-x: hidden;
+  background: linear-gradient(135deg, #ffcccc 0%, #990033 100%);
 }
 
 header {
