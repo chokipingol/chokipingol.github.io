@@ -4,12 +4,9 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 25px 20px;
   background: linear-gradient(135deg, #b2cbd6ff 0%, #0f3853ff 100%);
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 header h1 {
   margin: 5px 0;
