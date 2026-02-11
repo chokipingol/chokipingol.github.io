@@ -79,7 +79,7 @@ section.active {
 #profilePic {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: 40%;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(80, 90, 100, 0.3);
   transition: transform 0.3s ease;
